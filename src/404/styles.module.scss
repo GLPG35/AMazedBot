@@ -1,6 +1,6 @@
 .page404 {
 	width: 100%;
-	height: calc(100dvh - 5em);
+	height: calc(100dvh - 9vh);
 	background-color: var(--bg-color-2);
 	display: flex;
 	align-items: center;
@@ -19,28 +19,28 @@
 		position: absolute;
 		z-index: 2;
 		flex-direction: column;
-		gap: 1em;
+		gap: 1.9vh;
 		
 		p {
-			font-size: 3em;
+			font-size: 5.5vh;
 			font-weight: 800;
 			color: var(--secondary-color);
 			text-align: center;
 
 			&.small {
-				font-size: 1.5em;
+				font-size: 2.7vh;
 				font-weight: 600;
 			}
 		}
 
 		.action {
-			margin-top: 1.5em;
-			height: 4em;
+			margin-top: 2.7vh;
+			height: 6vh;
 		}
 	}
 
 	h1 {
-		font-size: 45em;
+		font-size: 81vh;
 		scale: 1.5 1;
 		font-family: "Disclaimer Classic", system-ui;
 		font-weight: 500;
