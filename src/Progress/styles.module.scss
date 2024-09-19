@@ -1,23 +1,23 @@
 .progress {
 	width: 100%;
-	height: calc(100dvh - 5em);
+	height: calc(100dvh - 9vh);
 	background-color: var(--bg-color-2);
 	display: flex;
 	flex-direction: row-reverse;
 	overflow: hidden;
 
 	.title {
-		--padding: 7em;
+		--padding: 13vh;
 
 		display: flex;
 		align-items: center;
 		justify-content: flex-end;
 		height: 100%;
-		width: calc(30em + var(--padding) / 4);
+		width: calc(55vh + var(--padding) / 4);
 		padding-right: var(--padding);
 		
 		h1 {
-			font-size: 30em;
+			font-size: 55vh;
 			scale: 1.5 1;
 			line-height: 0.75em;
 			font-family: "Disclaimer Classic", system-ui;
@@ -32,17 +32,17 @@
 		flex: 1;
 		display: flex;
 		flex-direction: column;
-		padding: 4em;
-		gap: 2em;
+		padding: 7vh;
+		gap: 4vh;
 
 		.listTitle {
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
-			height: 4em;
+			height: 5vh;
 
 			h2 {
-				font-size: 3em;
+				font-size: 5.5vh;
 				color: var(--secondary-color);
 				font-weight: 900;
 			}
@@ -53,27 +53,26 @@
 		}
 
 		.list {
-			gap: 1.5em;
+			gap: 2.5vh;
 			display: grid;
-			grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
+			grid-template-columns: repeat(auto-fit, minmax(60vh, 1fr));
 			grid-auto-rows: max-content;
-			font-size: 1.2em;
+			font-size: 2.1vh;
 		}
 
 		.progressBar {
 			width: 100%;
 			margin-top: auto;
-			height: 4em;
+			height: 7vh;
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			gap: 1em;
 			position: relative;
 			border: 3px solid var(--secondary-color);
 
 			.percentage, .percentage2 {
 				position: absolute;
-				font-size: 1.5em;
+				font-size: 2.7vh;
 				color: var(--bg-color-2);
 				width: 100%;
 				height: 100%;

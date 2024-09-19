@@ -1,5 +1,5 @@
 .header {
-	height: 5em;
+	height: 9vh;
 	width: 100%;
 	background-color: var(--bg-color-2);
 	position: sticky;
@@ -14,14 +14,14 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		padding-inline: 0.5em;
+		padding-inline: 0.9vh;
 	}
 
 	.icon {
 		height: 70%;
 		width: auto;
 		cursor: pointer;
-		padding: 0.5em;
+		padding: 0.9vh;
 
 		svg {
 			height: 100%;
@@ -31,8 +31,8 @@
 
 	nav {
 		display: flex;
-		gap: 1.2em;
-		font-size: 1.2em;
+		gap: 2.5vh;
+		font-size: 2.2vh;
 		align-items: center;
 		position: absolute;
 		margin-inline: auto;
@@ -47,6 +47,6 @@
 	}
 
 	.action {
-		padding-right: 0.5em;
+		padding-right: 0.9vh;
 	}
 }
