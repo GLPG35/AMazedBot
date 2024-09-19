@@ -1,0 +1,97 @@
+.progress {
+	width: 100%;
+	height: calc(100dvh - 5em);
+	background-color: var(--bg-color-2);
+	display: flex;
+	flex-direction: row-reverse;
+	overflow: hidden;
+
+	.title {
+		--padding: 7em;
+
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		height: 100%;
+		width: calc(30em + var(--padding) / 4);
+		padding-right: var(--padding);
+		
+		h1 {
+			font-size: 30em;
+			scale: 1.5 1;
+			line-height: 0.75em;
+			font-family: "Disclaimer Classic", system-ui;
+			font-weight: 500;
+			translate: 0 -11%;
+			text-align: right;
+			color: var(--secondary-color);
+		}
+	}
+
+	.recent {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		padding: 4em;
+		gap: 2em;
+
+		.listTitle {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			height: 4em;
+
+			h2 {
+				font-size: 3em;
+				color: var(--secondary-color);
+				font-weight: 900;
+			}
+
+			.action {
+				height: 100%;
+			}
+		}
+
+		.list {
+			gap: 1.5em;
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
+			grid-auto-rows: max-content;
+			font-size: 1.2em;
+		}
+
+		.progressBar {
+			width: 100%;
+			margin-top: auto;
+			height: 4em;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 1em;
+			position: relative;
+			border: 3px solid var(--secondary-color);
+
+			.percentage, .percentage2 {
+				position: absolute;
+				font-size: 1.5em;
+				color: var(--bg-color-2);
+				width: 100%;
+				height: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
+			.percentage {
+				background-color: var(--secondary-color);
+				z-index: 2;
+			}
+
+			.percentage2 {
+				color: var(--secondary-color);
+				background-color: var(--bg-color-2);
+				z-index: 1;
+			}
+		}
+	}
+}

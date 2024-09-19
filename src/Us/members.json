@@ -1,0 +1,30 @@
+[
+	{
+		"name": "Gian Luca Porto",
+		"username": "GLPG35",
+		"link": "https://github.com/GLPG35",
+		"photoURL": "https://avatars.githubusercontent.com/u/55563130?v=4",
+		"role": "Project Manager"
+	},
+	{
+		"name": "Sofía da Silva",
+		"username": "sosoph11",
+		"link": "https://github.com/sosoph11",
+		"photoURL": "https://avatars.githubusercontent.com/u/127795898?v=4",
+		"role": "Líder Artístico"
+	},
+	{
+		"name": "Ignacio Carvallo",
+		"username": "GDNacho",
+		"link": "https://github.com/GDNacho",
+		"photoURL": "https://avatars.githubusercontent.com/u/51422057?v=4",
+		"role": "Líder Técnico"
+	},
+	{
+		"name": "Mateo Moreira",
+		"username": "hothotdawg",
+		"link": "https://github.com/hothotdawg",
+		"photoURL": "https://avatars.githubusercontent.com/u/179180875?v=4",
+		"role": "Secretario"
+	}
+]

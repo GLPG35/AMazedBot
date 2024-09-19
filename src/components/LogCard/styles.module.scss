@@ -1,0 +1,59 @@
+.logCard {
+	padding: 1.5em;
+	background-image: linear-gradient(to right, transparent 50%, var(--bg-color) 50%);
+	background-size: 200% 100%;
+	color: var(--secondary-color);
+	display: flex;
+	flex-direction: column;
+	gap: 0.5em;
+	width: 100%;
+	height: max-content;
+	border: 3px solid var(--secondary-color);
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+	transition: background 0.3s cubic-bezier(0.65,0.05,0.36,1),
+		color 0.3s cubic-bezier(0.65,0.05,0.36,1);
+
+	&:hover {
+		background-position: 100% 0;
+		color: var(--bg-color-2);
+
+		.info {
+			.date {
+				color: var(--bg-color-2-op);
+			}
+		}
+	}
+
+	.arrow {
+		position: absolute;
+		top: 1.25em;
+		right: 1.5em;
+		font-size: 1.5em;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.info {
+		display: flex;
+		flex-direction: column;
+		
+		.logTitle {
+			font-weight: 900;
+			font-size: 1.3em;
+		}
+
+		.date {
+			font-weight: 600;
+			font-size: 1em;
+			color: var(--bg-color-op);
+			transition: 0.3s cubic-bezier(0.65,0.05,0.36,1);
+		}
+	}
+
+	.summary {
+		text-wrap: wrap;
+	}
+}

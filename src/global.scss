@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root {
+	--bg-color: #3c1427;
+	--bg-color-op: #3c1427be;
+	--bg-color-2: #f4702d;
+	--bg-color-2-op: #f46f2dbe;
+	--secondary-color: #3c1427;
+	--text-color: #fce0d1;
+
+	scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--bg-color-2);
+	font-family: "Source Code Pro", monospace;
+	font-weight: 500;
+}
+
+::-webkit-scrollbar {
+	width: 0.5em;
+	
+	&-thumb {
+		background-color: var(--secondary-color);
+	}
+
+	&-track {
+		background-color: var(--bg-color-2);
+	}
+}
+
+@font-face {
+	font-family: 'Disclaimer Classic';
+	src: url('/fonts/Disclaimer-Classic.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Disclaimer Plain';
+	src: url('/fonts/Disclaimer-Plain.otf') format('opentype');
+}
+
+button {
+	border: none;
+	outline: none;
+	background-color: var(--secondary-color);
+	color: var(--bg-color-2);
+	font-family: "Source Code Pro", monospace;
+	font-weight: 600;
+}

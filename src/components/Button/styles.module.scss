@@ -1,0 +1,46 @@
+.button {
+	display: flex;
+	font-size: 1.2em;
+	align-items: center;
+	padding: 0.8em 1em;
+	gap: 0.7em;
+	border: 3px solid var(--secondary-color);
+	background: linear-gradient(to left, transparent 50%, var(--secondary-color) 50%) right;
+	background-size: 200% 100%;
+	color: var(--secondary-color);
+	position: relative;
+	z-index: 0;
+	cursor: pointer;
+	overflow: hidden;
+	transition: background 0.3s cubic-bezier(0.65,0.05,0.36,1),
+		background-position 0.3s cubic-bezier(0.65,0.05,0.36,1),
+		color 0.2s ease-out;
+
+	&.invert {
+		border: 3px solid var(--bg-color-2);
+		background: linear-gradient(to left, transparent 50%, var(--bg-color-2) 50%) right;
+		background-size: 200% 100%;
+		color: var(--bg-color-2);
+
+		&:hover {
+			color: var(--bg-color);
+		}
+	}
+
+	&:hover {
+		color: var(--bg-color-2);
+		background-position: left;
+	}
+
+	.btnIcon {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 1.1em;
+	}
+
+	span {
+		transform-origin: left;
+		white-space: nowrap;
+	}
+}
