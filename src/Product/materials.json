@@ -1,0 +1,32 @@
+[
+	{
+		"name": "micro:bit",
+		"qtty": 1,
+		"img": "/microbit.webp"
+	},
+	{
+		"name": "Batería 9V",
+		"qtty": 2,
+		"img": "/bateria.jpg"
+	},
+	{
+		"name": "Sensor ultrasónico",
+		"qtty": 1,
+		"img": "/ultrasonico.jpeg"
+	},
+	{
+		"name": "Protoboard",
+		"qtty": 1,
+		"img": "/protoboard.jpg"
+	},
+	{
+		"name": "Kit rueda + motor",
+		"qtty": 2,
+		"img": "/ruedamotor.jpg"
+	},
+	{
+		"name": "Cables",
+		"qtty": "N",
+		"img": "/cables.jpg"
+	}
+]

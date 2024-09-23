@@ -49,4 +49,93 @@
 			}
 		}
 	}
+
+	.productInfo {
+		flex: 1;
+		height: 100%;
+		padding: 7vh;
+		display: flex;
+		flex-direction: column;
+		gap: 5vh;
+
+		.description {
+			font-size: 3.3vh;
+			color: var(--bg-color-2);
+			display: flex;
+			flex-direction: column;
+			gap: 3vh;
+
+			a {
+				color: var(--bg-color-2);
+			}
+
+			h2 {
+				font-size: 5.5vh;
+				font-weight: 900;
+			}
+		}
+
+		.materials {
+			font-size: 2.1vh;
+			color: var(--bg-color-2);
+			display: flex;
+			flex-direction: column;
+			gap: 3vh;
+			flex: 1;
+
+			h2 {
+				font-size: 5.5vh;
+				font-weight: 900;
+			}
+
+			.list {
+				width: 100%;
+				flex: 1;
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(35vh, 1fr));
+				grid-auto-rows: max-content;
+				gap: 3vh;
+
+				.material {
+					width: 100%;
+					height: max-content;
+					display: flex;
+					gap: 2.5vh;
+					padding: 1.7vh;
+					background-color: var(--bg-color-2);
+					color: var(--secondary-color);
+					align-items: center;
+
+					.pic {
+						height: 7vh;
+						width: 7vh;
+
+						img {
+							width: 100%;
+							height: 100%;
+							object-fit: contain;
+							mix-blend-mode: multiply;
+						}
+					}
+
+					.info {
+						display: flex;
+						flex-direction: column;
+						
+						.qtty {
+							font-size: 2.2vh;
+							color: var(--bg-color-op);
+						}
+					}
+				}
+			}
+		}
+
+		.ps {
+			width: 100%;
+			color: var(--bg-color-2);
+			font-size: 1.5vh;
+			text-align: right;
+		}
+	}
 }
