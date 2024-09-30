@@ -1,5 +1,5 @@
 import styles from './styles.module.scss'
-import progress from './progress.json'
+import progress from '../assets/progress.json'
 import Button from '../components/Button'
 import { motion } from 'framer-motion'
 import { PiEyeBold } from 'react-icons/pi'
@@ -31,12 +31,12 @@ const Progress = () => {
 					</motion.div>
 				</div>
 				<div className={styles.list}>
-					{sortProgress.map(({ date, title, summary }) => {
+					{sortProgress.map(({ id, date, title, summary }) => {
 						const parseDate = new Intl.DateTimeFormat('es-UY', {
 							day: 'numeric', month: 'long', year: 'numeric'
 						}).format(new Date(Date.parse(date)))
 
-						return <LogCard title={title} parseDate={parseDate} summary={summary} />
+						return <LogCard title={title} parseDate={parseDate} summary={summary} link={`/avances/${id}`} />
 					})}
 				</div>
 				<div className={styles.progressBar}>

@@ -1,0 +1,94 @@
+.gallery {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100dvh;
+	z-index: 10;
+	background-color: var(--bg-color-op-darker);
+	display: flex;
+	flex-direction: column;
+	padding: 5vh;
+
+	.currentPicture {
+		width: 100%;
+		height: 90%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.arrow {
+			font-size: 7vh;
+			color: var(--bg-color-2);
+			transition: opacity 0.2s ease-out;
+			cursor: pointer;
+			outline: none;
+			padding: 2vh;
+
+			&[aria-disabled="true"] {
+				opacity: 0.5;
+				cursor: auto;
+			}
+		}
+
+		.picture {
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			gap: 2vh;
+
+			.pic {
+				width: auto;
+				height: 60%;
+
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: contain;
+					user-select: none;
+					border: 3px solid var(--bg-color-2);
+					background-color: white;
+				}
+			}
+
+			.description {
+				text-align: center;
+				max-width: 60%;
+			}
+		}
+	}
+
+	.description {
+		width: 100%;
+		height: max-content;
+		padding: 2vh;
+		color: var(--bg-color-2);
+		text-align: center;
+	}
+
+	.list {
+		margin-top: auto;
+		height: 10%;
+		display: flex;
+		gap: 1.5vh;
+		justify-content: center;
+		align-items: center;
+		
+		.picture {
+			height: 10vh;
+			width: 10vh;
+			cursor: pointer;
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				border: 3px solid var(--bg-color-2);
+				user-select: none;
+				background-color: white;
+			}
+		}
+	}
+}

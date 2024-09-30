@@ -1,0 +1,573 @@
+{
+	"percentage": 35,
+	"logs": [
+		{
+			"id": 1,
+			"title": "Avance #1",
+			"date": "2024/08/29",
+			"summary": "Hoy iniciamos el proyecto para desarrollar un robot autónomo capaz de resolver laberintos utilizando micro:bits. En esta etapa, nos enfocamos en la conceptualización de la idea y la identificación de los materiales necesarios.",
+			"tasks": [
+				{
+					"title": "Diseño y montaje",
+					"advancements": [
+						"Se realizó una lluvia de ideas sobre el objetivo del proyecto.",
+						"Se discutieron y anotaron los materiales y componentes necesarios para el desarrollo del robot."
+					],
+					"status": "completed"
+				},
+				{
+					"title": "Programación",
+					"code": {
+						"advancements": [
+							"No se ha desarrollado código en esta etapa, ya que el enfoque ha sido sobre la conceptualización del proyecto."
+						],
+						"status": "pending"
+					},
+					"tests": {
+						"advancements": [
+							"No se han realizado pruebas aún debido a que el proyecto está en la fase inicial de planificación."
+						],
+						"status": "pending"
+					}
+				}
+			],
+			"issues": [
+				{
+					"title": "Descripción de problemas",
+					"description": "No se han identificado problemas específicos en esta etapa, ya que el proyecto está en fase de planificación."
+				},
+				{
+					"title": "Impacto en el proyecto",
+					"description": "No aplicable en esta fase."
+				},
+				{
+					"title": "Acciones tomadas",
+					"description": "Se ha creado un plan para investigar y adquirir los materiales necesarios."
+				}
+			],
+			"nextSteps": [
+				{
+					"title": "Tareas planeadas",
+					"advancements": [
+						"Investigación y adquisición de materiales. Continuar con la investigación sobre los componentes necesarios y comenzar la adquisición de los mismos.",
+						"Diseño detallado. Empezar a desarrollar el diseño detallado del robot y del circuito.",
+						"Preparación del entorno de programación. Configurar el entorno necesario para la programación del micro:bit."
+					]
+				},
+				{
+					"title": "Cronograma revisado",
+					"calendar": [
+						{
+							"date": "2024/09/20",
+							"title": "Adquisición de materiales"
+						},
+						{
+							"date": "2024/09/30",
+							"title": "Diseño detallado"
+						}
+					]
+				}
+			],
+			"resources": [
+				{
+					"title": "Recursos requeridos",
+					"advancements": [
+						"Materiales para el robot (micro:bit, sensores, motores, baterías, etc.).",
+						"Herramientas para el montaje y programación."
+					]
+				}
+			],
+			"comments": [
+				{
+					"title": "Retroalimentación del equipo",
+					"advancements": [
+						"El equipo está entusiasmado con el inicio del proyecto y está colaborando en la investigación de los materiales necesarios."
+					]
+				},
+				{
+					"title": "Sugerencias de mejora",
+					"advancements": [
+						"Definir un cronograma más detallado para las siguientes fases del proyecto para asegurar una transición fluida entre planificación y desarrollo."
+					]
+				}
+			],
+			"attachments": null
+		},
+		{
+			"id": 2,
+			"title": "Avance #2",
+			"date": "2024/09/06",
+			"summary": "Hoy hemos avanzado en la definición formal del proyecto. Se establecieron el nombre del proyecto, los materiales a utilizar, el alcance del proyecto, y se asignaron los roles dentro del equipo.",
+			"tasks": [
+				{
+					"title": "Diseño y montaje",
+					"advancements": [
+						"Nombre del proyecto definido como AMazedBot",
+						[
+							"Se determinó una lista preliminar de materiales que incluirá",
+							"Micro:bit: x2",
+							"Motor con rueda: x2",
+							"Sensor ultrasónico: x3",
+							"Protoboard: x1",
+							"Batería: x1",
+							"Cables: xN"
+						],
+						"Se definió el objetivo principal, que es desarrollar un robot que pueda navegar por un laberinto de forma autónoma.",
+						[
+							"Se asignaron roles a los miembros del equipo",
+							"Gian Luca Porto: Project Manager",
+							"Mateo Moreira: Secretario",
+							"Ignacio Carvallo: Líder Técnico",
+							"Sofía da Silva: Líder Artístico"
+						]
+					],
+					"status": "completed"
+				},
+				{
+					"title": "Programación",
+					"code": {
+						"advancements": [
+							"No se ha desarrollado código en esta etapa, ya que el enfoque ha sido la definición del proyecto y la planificación."
+						],
+						"status": "pending"
+					},
+					"tests": {
+						"advancements": [
+							"No se han realizado pruebas aún debido a que el proyecto está en la fase inicial de planificación."
+						],
+						"status": "pending"
+					}
+				}
+			],
+			"issues": [
+				{
+					"title": "Descripción de problemas",
+					"description": "No se han identificado problemas específicos en esta etapa de definición del proyecto."
+				},
+				{
+					"title": "Impacto en el proyecto",
+					"description": "No aplicable en esta fase."
+				},
+				{
+					"title": "Acciones tomadas",
+					"description": "Se ha establecido una base sólida para continuar con las siguientes fases del proyecto."
+				}
+			],
+			"nextSteps": [
+				{
+					"title": "Tareas planeadas",
+					"advancements": [
+						"Proceder con la compra de los componentes restantes.",
+						"Iniciar el diseño detallado del robot y el sistema de control.",
+						"Comenzar la configuración del entorno de programación y desarrollo del código básico."
+					]
+				},
+				{
+					"title": "Cronograma revisado",
+					"calendar": [
+						{
+							"date": "2024/09/20",
+							"title": "Adquisición de materiales"
+						},
+						{
+							"date": "2024/09/30",
+							"title": "Diseño detallado"
+						}
+					]
+				}
+			],
+			"resources": [
+				{
+					"title": "Recursos requeridos",
+					"advancements": [
+						"Compra de materiales y componentes necesarios para el robot.",
+						"Herramientas de diseño y programación"
+					]
+				}
+			],
+			"comments": [
+				{
+					"title": "Retroalimentación del equipo",
+					"advancements": [
+						"El equipo está satisfecho con el progreso realizado y está listo para avanzar a las siguientes fases."
+					]
+				},
+				{
+					"title": "Sugerencias de mejora",
+					"advancements": [
+						"Asegurarse de que todos los miembros del equipo tengan acceso a la documentación del proyecto y a los recursos necesarios."
+					]
+				}
+			],
+			"attachments": null
+		},
+		{
+			"id": 3,
+			"title": "Avance #3",
+			"date": "2024/09/13",
+			"summary": "Se realizaron importantes avances en el diseño del laberinto y la verificación de los componentes electrónicos. Además, se comenzaron a evaluar costos de materiales y posibles proveedores. También se avanzó en la implementación de código utilizando la página de microbit.org, aunque surgieron problemas con la potencia de las baterías.",
+			"tasks": [
+				{
+					"title": "Diseño y montaje",
+					"advancements": [
+						"Se diseñó el laberinto utilizando mazedgenerator.net y se comenzó la evaluación de los materiales que se necesitarán.",
+						"Se investigó el costo de cortar el laberinto en MDF mediante láser.",
+						"Se verificaron los componentes disponibles y su correcto funcionamiento.",
+						"Diseño del chasis del robot (pendiente).",
+						"Se evaluó la necesidad de comprar materiales adicionales, incluyendo costos y lugares donde adquirirlos."
+					],
+					"status": "active"
+				},
+				{
+					"title": "Programación",
+					"code": {
+						"advancements": [
+							"Se utilizó la página microbit.org para iniciar el desarrollo del código. Sin embargo, el circuito no funcionó como se esperaba debido a la insuficiente potencia de las baterías. Las actuales proporcionaban 3V cuando se requerían 5V."
+						],
+						"status": "pending"
+					},
+					"tests": {
+						"advancements": [
+							"Se verificaron los componentes electrónicos y se detectó que la falta de potencia en las baterías impidió el correcto funcionamiento del circuito."
+						],
+						"status": "pending"
+					}
+				}
+			],
+			"issues": [
+				{
+					"title": "Descripción de problemas",
+					"description": "El principal problema identificado fue la insuficiente potencia en las baterías, lo que afectó el funcionamiento del circuito."
+				},
+				{
+					"title": "Impacto en el proyecto",
+					"description": "Se retrasó el avance en la programación y en las pruebas del circuito."
+				},
+				{
+					"title": "Acciones tomadas",
+					"description": "Se está evaluando la compra de baterías con mayor voltaje (5V) para solucionar el problema."
+				}
+			],
+			"nextSteps": [
+				{
+					"title": "Tareas planeadas",
+					"advancements": [
+						"Continuar con el diseño del robot, específicamente su chasis.",
+						"Adquirir baterías adecuadas (5V) para continuar con el desarrollo del circuito.",
+						"Realizar pruebas adicionales una vez que se obtengan las baterías correctas.",
+						"Proceder con la compra de los materiales necesarios y la evaluación de los costos de corte láser."
+					]
+				},
+				{
+					"title": "Cronograma revisado",
+					"calendar": [
+						{
+							"date": "2024/09/20",
+							"title": "Adquisición de materiales"
+						},
+						{
+							"date": "2024/09/30",
+							"title": "Diseño detallado"
+						}
+					]
+				}
+			],
+			"resources": [
+				{
+					"title": "Recursos utilizados",
+					"advancements": [
+						"Herramientas de diseño y programación (Tinkercad, Blender).",
+						"https://microbit.org/"
+					]
+				}
+			],
+			"comments": [
+				{
+					"title": "Retroalimentación del equipo",
+					"advancements": [
+						"El equipo está avanzando en varias áreas a la vez, pero es crucial resolver los problemas de potencia para continuar con el desarrollo del robot."
+					]
+				},
+				{
+					"title": "Sugerencias de mejora",
+					"advancements": [
+						"Es importante continuar evaluando costos y asegurarse de que todos los componentes electrónicos funcionen correctamente antes de proceder con compras adicionales."
+					]
+				}
+			],
+			"attachments": [
+				{
+					"description": "La siguiente imagen representa una simulación preliminar del diseño del laberinto. Para su elaboración, se emplearon las herramientas Mazedgenerator.net y Blender.",
+					"url": "/laberinto.png"
+				},
+				{
+					"description": "Esta imagen ilustra la simulación del circuito real que hemos diseñado para evaluar su funcionamiento en un entorno virtual. Esta verificación se llevó a cabo debido a que en la implementación del circuito físico no logramos hacerlo funcionar adecuadamente debido a la insuficiencia de voltaje.",
+					"url": "/esquema.png"
+				},
+				{
+					"description": "La imagen adjunta muestra el circuito real que fue implementado durante el taller, utilizando una computadora, microbit, cables, protoboard, un sensor ultrasónico y una batería.",
+					"url": "/pruebas.jpg"
+				}
+			]
+		},
+		{
+			"id": 4,
+			"title": "Avance #4",
+			"date": "2024/09/20",
+			"summary": "Se han realizado avances en la adquisición de componentes y la programación del robot. Se compraron portapilas y se ha trabajado en el funcionamiento del sensor ultrasónico, aunque persisten algunos problemas. Además, se ha explorado la posibilidad de utilizar una tarjeta de expansión para mejorar la conectividad.",
+			"tasks": [
+				{
+					"title": "Diseño y montaje",
+					"advancements": [
+						"Se adquirieron 2 portapilas de caja (para 3 pilas AAA) y 2 portapilas de broche.",
+						"Se continuó con la evaluación de los materiales y componentes necesarios.",
+						"Se revisó el diseño del chasis del robot (pendiente)."
+					],
+					"status": "active"
+				},
+				{
+					"title": "Programación",
+					"code": {
+						"advancements": [
+							"Se programó el código para el sensor ultrasónico, aunque el funcionamiento ha sido problemático. Inicialmente, el circuito no funcionó correctamente debido a las resistencias, las cuales fueron eliminadas, logrando que el sensor funcionara.",
+							"Se probó conectar dos sensores en un solo microbit, pero no mostraron valores consistentes."
+						],
+						"status": "pending"
+					},
+					"tests": {
+						"advancements": [
+							"Se realizaron pruebas con el sensor ultrasónico y se observó que, al eliminar las resistencias, se logró un funcionamiento más adecuado, aunque aún presenta fallas."
+						],
+						"status": "pending"
+					}
+				}
+			],
+			"issues": [
+				{
+					"title": "Descripción de problemas",
+					"description": "El sensor ultrasónico sigue teniendo inconsistencias en su funcionamiento, especialmente al utilizar dos sensores en un solo microbit, ya que los valores mostrados son diferentes."
+				},
+				{
+					"title": "Impacto en el proyecto",
+					"description": "Se ha retrasado el avance en la programación y en las pruebas del sensor ultrasónico."
+				},
+				{
+					"title": "Acciones tomadas",
+					"description": "Se está evaluando la posibilidad de conseguir una tarjeta de expansión para el microbit, lo que podría ayudar a mejorar la conectividad y funcionalidad del proyecto."
+				}
+			],
+			"nextSteps": [
+				{
+					"title": "Tareas planeadas",
+					"advancements": [
+						"Continuar con el diseño del chasis del robot.",
+						"Evaluar la adquisición de una tarjeta de expansión para el microbit.",
+						"Realizar pruebas adicionales con el sensor ultrasónico después de ajustar el circuito.",
+						"Proceder con la compra de materiales necesarios y seguir evaluando costos."
+					]
+				},
+				{
+					"title": "Cronograma revisado",
+					"calendar": [
+						{
+							"date": "2024/09/27",
+							"title": "Adquisición de materiales"
+						},
+						{
+							"date": "2024/10/09",
+							"title": "Diseño detallado"
+						}
+					]
+				}
+			],
+			"resources": [
+				{
+					"title": "Recursos utilizados",
+					"advancements": [
+						"https://tinkercad.com/",
+						"https://microbit.org/"
+					]
+				}
+			],
+			"comments": [
+				{
+					"title": "Retroalimentación del equipo",
+					"advancements": [
+						"El equipo sigue enfrentando desafíos con el sensor ultrasónico y aún no tiene el laberinto armado, lo que ha generado preocupaciones sobre el avance del proyecto. El profesor sugirió considerar un objetivo más sencillo, lo que permitiría reducir gastos en materiales y facilitar la conclusión exitosa del proyecto."
+					]
+				},
+				{
+					"title": "Sugerencias de mejora",
+					"advancements": [
+						"Es fundamental resolver los problemas con los sensores antes de continuar con el desarrollo. Además, se debe evaluar la posibilidad de una tarjeta de expansión y asegurar que todos los componentes funcionen de manera óptima antes de realizar nuevas adquisiciones."
+					]
+				}
+			],
+			"attachments": [
+				{
+					"description": "Esta imagen muestra el código que utilizamos para evaluar el funcionamiento del primer circuito con un sensor ultrasónico.",
+					"url": "/program_1.png"
+				},
+				{
+					"description": "Esta imagen muestra el código que utilizamos para evaluar el funcionamiento del segundo circuito con los dos sensores ultrasónicos.",
+					"url": "/program_2.png"
+				},
+				{
+					"description": "Estas imágenes representan el prototipo del primer circuito que intentamos desarrollar en clase.",
+					"url": "/circuit_1.png"
+				},
+				{
+					"description": "Estas imágenes representan el prototipo del primer circuito que intentamos desarrollar en clase.",
+					"url": "/real_circuit_1.jpg"
+				},
+				{
+					"description": "Estas imágenes representan el prototipo del primer circuito que intentamos desarrollar en clase.",
+					"url": "/real_circuit_2.jpg"
+				},
+				{
+					"description": "Las siguientes imágenes muestran el circuito sin las resistencias, así como la evidencia del correcto funcionamiento del sensor, reflejado en el microbit.",
+					"url": "/real_circuit_3.jpg"
+				},
+				{
+					"description": "Las siguientes imágenes muestran el circuito sin las resistencias, así como la evidencia del correcto funcionamiento del sensor, reflejado en el microbit.",
+					"url": "/real_circuit_4.jpg"
+				}
+			]
+		},
+		{
+			"id": 5,
+			"title": "Avance #5",
+			"date": "2024/09/27",
+			"summary": "Hemos avanzado en la compra y prueba de las ruedas con motor, aunque hemos encontrado algunos problemas en el control de los motores y su programación.",
+			"tasks": [
+				{
+					"title": "Diseño y montaje",
+					"advancements": [
+						"Se conectaron las ruedas a las pilas.",
+						"Se probó el circuito con un transistor Tinkercad"
+					],
+					"status": "active"
+				},
+				{
+					"title": "Programación",
+					"code": {
+						"title": "Código desarrollado",
+						"advancements": [
+							"Se utilizó el bloque de código para controlar el motor en Tinkercad."
+						],
+						"status": "pending"
+					},
+					"tests": {
+						"title": "Pruebas realizadas",
+						"advancements": [
+							"Se probaron las ruedas en Tinkercad para mover hacia adelante y hacia atrás.",
+							"Se intentó aplicar el código a la microbit, pero solo funcionó al mover las ruedas hacia adelante."
+						],
+						"status": "pending"
+					}
+				}
+			],
+			"issues": [
+				{
+					"title": "Descripción de problemas",
+					"description": [
+						"No se pudo identificar si el motor arrancaba al conectarlo directamente a las pilas, ya que siempre parecía estar funcionando.",
+						"Las ruedas no giraban en sentido contrario a menos que se invirtieran los cables.",
+						"Problemas al utilizar cuatro resistores en el circuito, lo que impidió el control del motor con micro:bit."
+					]
+				},
+				{
+					"title": "Impacto en el proyecto",
+					"description": "Los problemas con la conexión y el control del motor están retrasando el progreso del proyecto."
+				},
+				{
+					"title": "Acciones tomadas",
+					"description": "Se intentaron varias configuraciones de conexión, incluyendo cambiar la cantidad de transistores utilizados y probar con diferentes configuraciones en la protoboard."
+				}
+			],
+			"nextSteps": [
+				{
+					"title": "Tareas planeadas",
+					"advancements": [
+						"Investigar el uso adecuado de resistores y cómo afectan el circuito.",
+						"Probar diferentes configuraciones en la protoboard para lograr el control del motor."
+					]
+				},
+				{
+					"title": "Cronograma revisado",
+					"calendar": [
+						{
+							"date": "2024/09/03",
+							"title": "Adquisición de materiales"
+						},
+						{
+							"date": "2024/09/04",
+							"title": "Diseño detallado"
+						}
+					]
+				}
+			],
+			"resources": [
+				{
+					"title": "Recursos utilizados",
+					"advancements": [
+						"https://tinkercad.com/",
+						"https://microbit.org/"
+					]
+				}
+			],
+			"comments": [
+				{
+					"title": "Retroalimentación del equipo",
+					"advancements": [
+						"El equipo sugiere que es fundamental continuar trabajando en el control del motor para lograr un funcionamiento óptimo. Se recomienda experimentar con diferentes configuraciones de resistores, especialmente al usar resistores con tres patitas, para entender mejor cómo influyen en el circuito y en el comportamiento del motor. También es importante realizar pruebas exhaustivas en la protoboard para identificar posibles problemas de conexión que podrían estar afectando el rendimiento del sistema."
+					]
+				},
+				{
+					"title": "Sugerencias de mejora",
+					"advancements": [
+						"Se sugiere revisar y ajustar el código en la microbit, asegurándose de que la señal se envíe correctamente al motor. Tal vez sería beneficioso documentar cada configuración y resultado para facilitar el proceso de depuración. Por último, se considera útil buscar recursos adicionales o consultar al profesor sobre estrategias para el control inverso del motor, ya que esto es crucial para la funcionalidad del proyecto."
+					]
+				}
+			],
+			"attachments": [
+				{
+					"description": "Imágenes de los bloques de código implementados",
+					"url": "/program_3.jpg"
+				},
+				{
+					"description": "Imágenes de los bloques de código implementados",
+					"url": "/program_4.jpg"
+				},
+				{
+					"description": "Imágenes de los circuitos empleados en tinkercad",
+					"url": "/circuit_2.jpg"
+				},
+				{
+					"description": "Imágenes de los circuitos empleados en tinkercad",
+					"url": "/circuit_3.jpg"
+				},
+				{
+					"description": "Imágenes de los circuitos empleados en tinkercad",
+					"url": "/circuit_4.jpg"
+				},
+				{
+					"description": "Imágenes del circuito en la protoboard",
+					"url": "/real_circuit_5.jpg"
+				},
+				{
+					"description": "Imágenes del circuito en la protoboard",
+					"url": "/real_circuit_6.jpg"
+				},
+				{
+					"description": "Imágenes del circuito en la protoboard",
+					"url": "/real_circuit_7.jpg"
+				},
+				{
+					"description": "Imágenes del circuito en la protoboard",
+					"url": "/real_circuit_8.jpg"
+				}
+			]
+		}
+	]
+}

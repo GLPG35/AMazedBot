@@ -1,5 +1,93 @@
 .progressPage {
 	width: 100%;
-	height: calc(100dvh - 5em);
+	height: calc(100dvh - 9vh);
 	background-color: var(--bg-color-2);
+	display: flex;
+
+	.title {
+		--padding: 13vh;
+		
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		height: 100%;
+		width: calc(55vh + var(--padding) / 4);
+		padding-left: var(--padding);
+
+		h1 {
+			color: var(--secondary-color);
+			font-size: 55vh;
+			scale: 1.5 1;
+			line-height: 0.75em;
+			font-family: "Disclaimer Classic", system-ui;
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-weight: 500;
+			width: max-content;
+			translate: 0 -11%;
+		}
+	}
+
+	.progressList {
+		flex: 1;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		padding: 7vh;
+		gap: 4vh;
+
+		.progressBar {
+			width: 100%;
+			height: 7vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+			border: 3px solid var(--secondary-color);
+
+			.percentage, .percentage2 {
+				position: absolute;
+				font-size: 2.7vh;
+				color: var(--bg-color-2);
+				width: 100%;
+				height: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
+			.percentage {
+				background-color: var(--secondary-color);
+				z-index: 2;
+			}
+
+			.percentage2 {
+				color: var(--secondary-color);
+				background-color: var(--bg-color-2);
+				z-index: 1;
+			}
+		}
+
+		.list {
+			width: 100%;
+			gap: 2.5vh;
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(60vh, 1fr));
+			grid-auto-rows: max-content;
+			font-size: 2.1vh;
+			overflow-y: auto;
+			overflow-x: hidden;
+
+			&::-webkit-scrollbar {
+				width: 3vh;
+				
+				&-thumb {
+					border-inline: 1.1vh solid #00000000;
+					background-clip: padding-box;
+				}
+			}
+		}
+	}
 }

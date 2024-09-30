@@ -1,0 +1,170 @@
+.log {
+	width: 100%;
+	height: calc(100dvh - 9vh);
+	padding: 4vh;
+	padding-top: 1vh;
+	color: var(--secondary-color);
+	display: flex;
+	flex-direction: column;
+	gap: 2.5vh;
+
+	.title {
+		width: 100%;
+		height: max-content;
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		flex-direction: column;
+		gap: 0.5vh;
+		font-size: 3vh;
+		font-weight: 900;
+
+		.back {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 1.5vh;
+			font-weight: 500;
+			font-size: 2vh;
+			margin-bottom: 0.5vh;
+
+			&:hover {
+				cursor: pointer;
+				
+				span {
+					text-decoration: underline;
+				}
+			}
+
+			.icon {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+		}
+
+		.date {
+			font-weight: 600;
+			font-size: 2.2vh;
+			color: var(--bg-color-op);
+		}
+	}
+
+	.sections {
+		width: 100%;
+		flex: 1;
+		overflow-y: auto;
+		display: flex;
+		flex-direction: column;
+		padding: 0.5vh 1vh;
+		padding-inline: 2vh;
+		gap: 3vh;
+
+		.section {
+			display: flex;
+			flex-direction: column;
+			gap: 2.5vh;
+			font-size: 2.2vh;
+			border-color: var(--secondary-color);
+			border-style: solid;
+			border-width: 3px;
+			padding-block: 2vh 3.5vh;
+			padding-inline: 3.5vh;
+			
+			legend {
+				font-size: 3vh;
+				font-weight: 700;
+				margin-left: 0.5vh;
+				display: flex;
+				gap: 1vh;
+				align-items: center;
+
+				.icon {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+				}
+			}
+
+			.subSection {
+				display: flex;
+				flex-direction: column;
+				gap: 1.5vh;
+				
+				h3 {
+					font-size: 2.5vh;
+					font-weight: 700;
+				}
+
+				ul {
+					display: flex;
+					flex-direction: column;
+					gap: 1.5vh;
+					padding-inline: 3.5vh;
+				}
+
+				a {
+					color: var(--secondary-color);
+				}
+
+				.subSubSection {
+					padding: 0.5vh 1.5vh;
+					display: flex;
+					flex-direction: column;
+					gap: 1vh;
+				}
+
+				.calendar {
+					display: flex;
+					flex-direction: column;
+					gap: 1vh;
+					padding: 2vh;
+
+					.milestone {
+						display: flex;
+
+						.date {
+							height: 15vh;
+							width: 15vh;
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+							justify-content: center;
+							background-color: var(--secondary-color);
+							color: var(--bg-color-2);
+
+							.day {
+								font-weight: 900;
+								font-size: 10vh;
+								line-height: 9vh;
+							}
+						}
+					}
+				}
+			}
+
+			.photoGrid {
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(20vh, 1fr));
+				gap: 1.5vh;
+				grid-auto-rows: max-content;
+				padding-block: 1vh 0.5vh;
+
+				.picture {
+					width: 100%;
+					aspect-ratio: 1 / 1;
+					height: auto;
+					cursor: pointer;
+
+					img {
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+						background-color: white;
+						border: 3px solid var(--secondary-color);
+					}
+				}
+			}
+		}
+	}
+}

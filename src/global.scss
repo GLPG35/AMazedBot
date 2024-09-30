@@ -3,6 +3,7 @@
 :root {
 	--bg-color: #3c1427;
 	--bg-color-op: #3c1427be;
+	--bg-color-op-darker: #3c1427e5;
 	--bg-color-2: #f4702d;
 	--bg-color-2-op: #f46f2dbe;
 	--secondary-color: #3c1427;
@@ -26,7 +27,7 @@ body {
 }
 
 ::-webkit-scrollbar {
-	width: 0.5em;
+	width: 0.8vh;
 	
 	&-thumb {
 		background-color: var(--secondary-color);
