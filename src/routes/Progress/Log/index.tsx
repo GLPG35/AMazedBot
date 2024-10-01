@@ -3,7 +3,7 @@ import styles from './styles.module.scss'
 import progress from '../../../assets/progress.json'
 import { useEffect, useState } from 'react'
 import NotFound from '../../../components/NotFound'
-import { PiArrowLeftBold, PiChatsCircleBold, PiFootprintsBold, PiImagesBold, PiMagnifyingGlassBold, PiNotepadBold, PiSquaresFourBold, PiTextAlignCenterBold, PiWarningBold } from 'react-icons/pi'
+import { PiArrowLeftBold, PiCaretLeftBold, PiCaretRightBold, PiChatsCircleBold, PiFootprintsBold, PiImagesBold, PiMagnifyingGlassBold, PiNotepadBold, PiSquaresFourBold, PiTextAlignCenterBold, PiWarningBold } from 'react-icons/pi'
 import Gallery from '../../../components/Gallery'
 
 const Log = () => {
@@ -17,6 +17,8 @@ const Log = () => {
 	}, [id])
 	
 	const log = progress.logs.find(x => x.id == +parseId)
+	const prevLog = +parseId <= 1 ? null : progress.logs.find(x => x.id == +parseId - 1)
+	const nextLog = +parseId >= progress.logs.length ? null : progress.logs.find(x => x.id == +parseId + 1)
 	
 	return (
 		<>
@@ -180,6 +182,38 @@ const Log = () => {
 									</div>
 							</fieldset>
 						}
+						<div className={styles.navigation}>
+							{prevLog &&
+								<div className={styles.prev} onClick={() => navigate(`/avances/${prevLog.id}`)}>
+									<div className={styles.icon}>
+										<PiCaretLeftBold />
+									</div>
+									<div className={styles.info}>
+										<div className={styles.top}>
+											Anterior
+										</div>
+										<div className={styles.bot}>
+											{prevLog.title}
+										</div>
+									</div>
+								</div>
+							}
+							{nextLog &&
+								<div className={styles.next} onClick={() => navigate(`/avances/${nextLog.id}`)}>
+									<div className={styles.icon}>
+										<PiCaretRightBold />
+									</div>
+									<div className={styles.info}>
+										<div className={styles.top}>
+											Siguiente
+										</div>
+										<div className={styles.bot}>
+											{nextLog.title}
+										</div>
+									</div>
+								</div>
+							}
+						</div>
 					</div>
 				</div>
 			:
