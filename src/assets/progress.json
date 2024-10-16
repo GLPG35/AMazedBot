@@ -1,5 +1,5 @@
 {
-	"percentage": 35,
+	"percentage": 45,
 	"logs": [
 		{
 			"id": 1,
@@ -566,6 +566,256 @@
 				{
 					"description": "Imágenes del circuito en la protoboard",
 					"url": "/real_circuit_8.jpg"
+				}
+			]
+		},
+		{
+			"id": 6,
+			"title": "Avance #6",
+			"date": "2024/10/04",
+			"summary": "El robot ha sido ensamblado con sus motores, ruedas y circuitos iniciales. Las pruebas básicas demostraron que las ruedas pueden moverse hacia adelante, atrás y girar en círculos. También hemos comenzado a utilizar dos microbits para controlar el robot de forma remota.",
+			"tasks": [
+				{
+					"title": "Diseño y montaje",
+					"advancements": [
+						"Ensamblaje del chasis del robot, con las dos ruedas traseras y la rueda delantera universal.",
+						"Conexión de los motores mediante cables caimanes a la fuente de alimentación.",
+						"Pruebas del movimiento de las ruedas hacia adelante y atrás."
+					],
+					"status": "completed"
+				},
+				{
+					"title": "Programación",
+					"code": {
+						"title": "Código desarrollado",
+						"advancements": [
+							"Primer programa para controlar una rueda con transistores, que funcionó correctamente (utilizamos 1).",
+							"Modificación del código para controlar las dos ruedas, logrando que se movieran hacia adelante y giraran en círculos.",
+							"Programación en la microbit para que los motores se activaran cuando se presionara el botón A.",
+							"Comunicación remota entre dos microbits, utilizando radio para controlar el encendido y apagado del circuito."
+						],
+						"status": "completed"
+					},
+					"tests": {
+						"title": "Pruebas realizadas",
+						"advancements": [
+							"Ensamblaje del chasis y conexión de los motores a la fuente de alimentación.",
+							"Pruebas de movimiento de las ruedas hacia adelante, atrás y giros en círculo.",
+							"Verificación de los programas en microbit para controlar los motores.",
+							"Prueba de control remoto entre dos microbits, logrando activar y desactivar el circuito a distancia."
+						],
+						"status": "completed"
+					}
+				}
+			],
+			"issues": [
+				{
+					"title": "Descripción de problemas",
+					"description": [
+						"Los motores se trababan porque las ruedas se bloqueaban con los cables.",
+						"Sospechamos que los motores no estaban bien fijados al chasis, lo que ocasionaba que las ruedas no funcionaran correctamente.",
+						"El manejo de cables es desordenado y complicado, debido a la falta de espacio y de cables suficientes."
+					]
+				},
+				{
+					"title": "Impacto en el proyecto",
+					"description": [
+						"Dificultad en las pruebas de movimiento, ya que los motores se trababan o no funcionaban correctamente.",
+						"El desorden en el cableado afecta la organización y eficiencia del montaje."
+					]
+				},
+				{
+					"title": "Acciones tomadas",
+					"description": [
+						"Ajustar los motores para que queden mejor fijados.",
+						"Planificar la adquisición de más cables y una tarjeta de expansión para la micro:bit."
+					]
+				}
+			],
+			"nextSteps": [
+				{
+					"title": "Tareas planeadas",
+					"advancements": [
+						"Comprar 3 sensores de seguimiento de línea/proximidad.",
+						"Adquirir una tarjeta de expansión para la microbit.",
+						"Conseguir más cables caimanes."
+					]
+				},
+				{
+					"title": "Cronograma revisado",
+					"calendar": [
+						{
+							"date": "2024/10/11",
+							"title": "Compra de los componentes adicionales"
+						},
+						{
+							"date": "2024/10/11",
+							"title": "Montaje y optimización del sistema"
+						}
+					]
+				}
+			],
+			"resources": [
+				{
+					"title": "Recursos requeridos",
+					"advancements": [
+						"Sensores de seguimiento de línea o proximidad.",
+						"Tarjeta de expansión para la microbit.",
+						"Cables caimanes adicionales."
+					]
+				},
+				{
+					"title": "Recursos utilizados",
+					"advancements": [
+						"https://microbit.org/",
+						"https://tinkercad.com/"
+					]
+				}
+			],
+			"comments": [
+				{
+					"title": "Retroalimentación del equipo",
+					"advancements": [
+						"El equipo está satisfecho con el progreso logrado hasta ahora, ya que se ha avanzado en el ensamblaje del chasis, la conexión de los motores, y la implementación básica de control con la micro:bit.",
+						"Sin embargo, se han identificado algunas áreas de mejora clave. En cuanto al manejo de cables, el equipo señala que el cableado es desordenado y dificulta las pruebas, lo que incrementa la posibilidad de errores durante las conexiones. Además, se ha observado que los motores no están bien fijados al chasis, lo que pudo haber provocado problemas en la estabilidad del montaje, afectando el rendimiento del robot durante las pruebas de movimiento.",
+						"El equipo también ha comentado que la integración de más sensores y componentes electrónicos (como la tarjeta de expansión) podría facilitar futuras implementaciones y mejorar la funcionalidad del robot. En términos generales, se aprecia el avance logrado, pero se ha subrayado la importancia de adquirir los recursos necesarios para resolver estos inconvenientes y optimizar el diseño."
+					]
+				},
+				{
+					"title": "Sugerencias de mejora",
+					"advancements": [
+						"Buscar herramientas adecuadas para mejorar el ensamblaje del chasis y evitar que los motores queden flojos.",
+						"Implementar un sistema de gestión de cables para mantener el montaje más ordenado y eficiente."
+					]
+				}
+			],
+			"attachments": [
+				{
+					"description": "Se adjunta foto de la nueva placa utilizada para hacer uso de las ruedas.",
+					"url": "/placa_1.jpeg"
+				},
+				{
+					"description": "Se adjunta foto de la placa armada con el robot en funcionamiento.",
+					"url": "/pruebas_0.png"
+				}
+			]
+		},
+		{
+			"id": 7,
+			"title": "Avance #7",
+			"date": "2024/10/11",
+			"summary": "Se intentó probar el movimiento individual de las ruedas hacia adelante y hacia atrás haciendo uso de transistores. También probamos el sensor de seguidor de línea que diferencia entre blanco y negro (chip TCRT500). Además de eso se pudo hacer uso de la tarjeta de expansión de la micro:bit.",
+			"tasks": [
+				{
+					"title": "Diseño y montaje",
+					"advancements": [
+						"Creación del circuito para controlar ambas direcciones de las ruedas de forma individual usando la tarjeta de expansión.",
+						"Conexión de los sensores de seguidor de línea con la micro:bit haciendo uso de la tarjeta de expansión."
+					],
+					"status": "pending"
+				},
+				{
+					"title": "Programación",
+					"code": {
+						"title": "Código desarrollado",
+						"advancements": [
+							"Programa sencillo para controlar las ruedas con los botones A y B de la micro:bit.",
+							"Programa sencillo para mostrar un 0 o un 1 dependiendo de si el sensor de seguidor de línea capta el color blanco o el negro."
+						],
+						"status": "completed"
+					},
+					"tests": {
+						"title": "Pruebas realizadas",
+						"advancements": [
+							"Intentar manejar las ruedas individualmente creando un circuito usando transistores, resistencias y la tarjeta de expansión.",
+							"Intentar manejar las ruedas individualmente usando transistores y resistencias sin la tarjeta de expansión.",
+							"Intentar manejar las ruedas individualmente usando transistores sin las resistencias y sin la tarjeta de expansión.",
+							"Comprobar que las ruedas funcionan proporcionando corriente directa.",
+							"Comprobar el funcionamiento del sensor de seguidor de línea con la tarjeta de expansión."
+						],
+						"status": "active"
+					}
+				}
+			],
+			"issues": [
+				{
+					"title": "Descripción de problemas",
+					"description": [
+						"Los motores no funcionaban cuando se intentaba hacer el circuito con los transistores, por razones desconocidas.",
+						"El sensor de seguidor de línea no devolvía números enteros a la micro:bit."
+					]
+				},
+				{
+					"title": "Impacto en el proyecto",
+					"description": "Al no poder implementar el control de las ruedas de manera individual, el avance en el proyecto se retrasó demasiado, ya que era muy importante para avanzar a otras etapas del proyecto."
+				},
+				{
+					"title": "Acciones tomadas",
+					"description": [
+						"Intentamos probar más formas de que funcione el control de los motores haciendo uso de los transistores y la tarjeta de expansión para poder avanzar a las siguientes etapas, sin éxito.",
+						"Se intentó verificar que la tarjeta de expansión funcionaba correctamente, y resultó que sí.",
+						"Se verificó que las resistencias no eran un problema a la hora de hacer el circuito.",
+						"Se verificó que el circuito funcionaba en la simulación de Tinkercad.",
+						"Se corrigió el error del sensor de seguidor de línea redondeando los valores devueltos por el pin de la micro:bit usando la función pull pin to up."
+					]
+				}
+			],
+			"nextSteps": [
+				{
+					"title": "Tareas planeadas",
+					"advancements": [
+						"Seguir intentando formas de solucionar el problema con las ruedas."
+					]
+				},
+				{
+					"title": "Cronograma revisado",
+					"calendar": [
+						{
+							"date": "2024/10/18",
+							"title": "Solucionar problema con los motores"
+						}
+					]
+				}
+			],
+			"resources": [
+				{
+					"title": "Recursos utilizados",
+					"advancements": [
+						"https://microbit.org/",
+						"https://tinkercad.com/"
+					]
+				}
+			],
+			"comments": [
+				{
+					"title": "Retroalimentación del equipo",
+					"advancements": [
+						"Es importante señalar que no hubo cambios significativos en el funcionamiento de las ruedas ya que solo los sensores quedaron operativos. La comunicación entre los integrantes del equipo y el enfoque colaborativo serán clave para resolver los problemas presentados. Para la próxima clase nos enfocaremos en encontrar una solución efectiva que nos permita avanzar a las siguientes etapas del proyecto."
+					]
+				},
+				{
+					"title": "Sugerencias de mejora",
+					"advancements": [
+						"Buscar nuevas formas de solucionar el problema de los motores de manera eficiente, sabiendo replicar el problema y buscar las causas de por qué sucede."
+					]
+				}
+			],
+			"attachments": [
+				{
+					"description": "Se adjunta foto tomada en clase del circuito para el funcionamiento de los motores usando transistores.",
+					"url": "/real_circuit_10.jpeg"
+				},
+				{
+					"description": "Se adjunta foto de las pruebas con el robot.",
+					"url": "/pruebas_3.jpeg"
+				},
+				{
+					"description": "Se adjunta foto del funcionamiento del sensor de seguidor de línea, donde imprime un 0 cuando detecta el color negro o un 1 si detecta el color blanco.",
+					"url": "/pruebas_4.jpeg"
+				},
+				{
+					"description": "Se adjunta foto de la tarjeta de expansión de la micro:bit.",
+					"url": "/real_circuit_9.jpeg"
 				}
 			]
 		}

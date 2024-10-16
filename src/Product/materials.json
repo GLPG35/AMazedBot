@@ -5,24 +5,34 @@
 		"img": "/microbit.webp"
 	},
 	{
-		"name": "Batería 9V",
-		"qtty": 2,
-		"img": "/bateria.jpg"
+		"name": "Pilas AAA",
+		"qtty": 14,
+		"img": "/pilas.webp"
 	},
 	{
-		"name": "Sensor ultrasónico",
-		"qtty": 1,
-		"img": "/ultrasonico.jpeg"
+		"name": "Sensor de seguidor de línea",
+		"qtty": 3,
+		"img": "/tcrt5000.jpg"
 	},
 	{
 		"name": "Protoboard",
-		"qtty": 1,
+		"qtty": 3,
 		"img": "/protoboard.jpg"
 	},
 	{
-		"name": "Kit rueda + motor",
-		"qtty": 2,
-		"img": "/ruedamotor.jpg"
+		"name": "Kit 3 ruedas + base acrílica",
+		"qtty": 1,
+		"img": "/kit_3_ruedas.jpeg"
+	},
+	{
+		"name": "Tarjeta de expansión de Micro:bit",
+		"qtty": 1,
+		"img": "/tarjeta_expansion.jpeg"
+	},
+	{
+		"name": "Transistor",
+		"qtty": 8,
+		"img": "/transistor.webp"
 	},
 	{
 		"name": "Cables",

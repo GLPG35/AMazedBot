@@ -1,0 +1,93 @@
+{
+	"id": 1,
+	"title": "Avance #",
+	"date": "2024/??/??",
+	"summary": "",
+	"tasks": [
+		{
+			"title": "Diseño y montaje",
+			"advancements": [
+				
+			],
+			"status": "active|pending|completed"
+		},
+		{
+			"title": "Programación",
+			"code": {
+				"title": "Código desarrollado",
+				"advancements": [
+
+				],
+				"status": "active|pending|completed"
+			},
+			"tests": {
+				"title": "Pruebas realizadas",
+				"advancements": [
+					
+				],
+				"status": "active|pending|completed"
+			}
+		}
+	],
+	"issues": [
+		{
+			"title": "Descripción de problemas",
+			"description": [
+				
+			]
+		},
+		{
+			"title": "Impacto en el proyecto",
+			"description": ""
+		},
+		{
+			"title": "Acciones tomadas",
+			"description": ""
+		}
+	],
+	"nextSteps": [
+		{
+			"title": "Tareas planeadas",
+			"advancements": [
+				
+			]
+		},
+		{
+			"title": "Cronograma revisado",
+			"calendar": [
+				{
+					"date": "2024/??/??",
+					"title": ""
+				}
+			]
+		}
+	],
+	"resources": [
+		{
+			"title": "Recursos utilizados",
+			"advancements": [
+				
+			]
+		}
+	],
+	"comments": [
+		{
+			"title": "Retroalimentación del equipo",
+			"advancements": [
+				
+			]
+		},
+		{
+			"title": "Sugerencias de mejora",
+			"advancements": [
+				
+			]
+		}
+	],
+	"attachments": [
+		{
+			"description": "",
+			"url": "/"
+		}
+	]
+}
