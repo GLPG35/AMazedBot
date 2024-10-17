@@ -473,7 +473,7 @@
 					"description": [
 						"No se pudo identificar si el motor arrancaba al conectarlo directamente a las pilas, ya que siempre parecía estar funcionando.",
 						"Las ruedas no giraban en sentido contrario a menos que se invirtieran los cables.",
-						"Problemas al utilizar cuatro resistores en el circuito, lo que impidió el control del motor con micro:bit."
+						"Problemas al utilizar cuatro transistores en el circuito, lo que impidió el control del motor con micro:bit."
 					]
 				},
 				{
@@ -489,7 +489,7 @@
 				{
 					"title": "Tareas planeadas",
 					"advancements": [
-						"Investigar el uso adecuado de resistores y cómo afectan el circuito.",
+						"Investigar el uso adecuado de transistores y cómo afectan el circuito.",
 						"Probar diferentes configuraciones en la protoboard para lograr el control del motor."
 					]
 				},
@@ -520,7 +520,7 @@
 				{
 					"title": "Retroalimentación del equipo",
 					"advancements": [
-						"El equipo sugiere que es fundamental continuar trabajando en el control del motor para lograr un funcionamiento óptimo. Se recomienda experimentar con diferentes configuraciones de resistores, especialmente al usar resistores con tres patitas, para entender mejor cómo influyen en el circuito y en el comportamiento del motor. También es importante realizar pruebas exhaustivas en la protoboard para identificar posibles problemas de conexión que podrían estar afectando el rendimiento del sistema."
+						"El equipo sugiere que es fundamental continuar trabajando en el control del motor para lograr un funcionamiento óptimo. Se recomienda experimentar con diferentes configuraciones de transistores, especialmente al usar transistores con tres patitas, para entender mejor cómo influyen en el circuito y en el comportamiento del motor. También es importante realizar pruebas exhaustivas en la protoboard para identificar posibles problemas de conexión que podrían estar afectando el rendimiento del sistema."
 					]
 				},
 				{
