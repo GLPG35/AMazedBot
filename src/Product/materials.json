@@ -6,7 +6,7 @@
 	},
 	{
 		"name": "Pilas AAA",
-		"qtty": 14,
+		"qtty": 9,
 		"img": "/pilas.webp"
 	},
 	{
@@ -30,9 +30,9 @@
 		"img": "/tarjeta_expansion.jpeg"
 	},
 	{
-		"name": "Transistor",
-		"qtty": 8,
-		"img": "/transistor.webp"
+		"name": "Microchip",
+		"qtty": 1,
+		"img": "/microchip.webp"
 	},
 	{
 		"name": "Cables",

@@ -1,5 +1,5 @@
 {
-	"percentage": 45,
+	"percentage": 75,
 	"logs": [
 		{
 			"id": 1,
@@ -816,6 +816,223 @@
 				{
 					"description": "Se adjunta foto de la tarjeta de expansión de la micro:bit.",
 					"url": "/real_circuit_9.jpeg"
+				}
+			]
+		},
+		{
+			"id": 8,
+			"title": "Avance #8",
+			"date": "2024/10/18",
+			"summary": "Se intentaron encontrar soluciones al problema de que los transistores no funcionaban de la manera correcta, Tanto con la tarjeta de expansión de la micro:bit como sin la misma. Optamos por hacer uso de un microchip en su lugar.",
+			"tasks": [
+				{
+					"title": "Diseño y montaje",
+					"advancements": [
+						"Recrear el circuito desde cero para probar los transistores en conjunto con los motores.",
+						"Probar a usar el microchip como reemplazo de los 8 transistores, para poder manejar los motores."
+					],
+					"status": "completed"
+				},
+				{
+					"title": "Programación",
+					"code": {
+						"title": "Código desarrollado",
+						"advancements": [
+							"Programa sencillo para controlar las ruedas hacia adelante y hacia atrás con los botones A y B de la micro:bit."
+						],
+						"status": "completed"
+					},
+					"tests": {
+						"title": "Pruebas realizadas",
+						"advancements": [
+							"Intentar manejar las ruedas individualmente creando un circuito usando transistores, resistencias y la tarjeta de expansión.",
+							"Intentar manejar las ruedas individualmente creando un circuito usando transistores, resistencias y la tarjeta de expansión.",
+							"Probar que los transistores transmitan el voltaje correcto.",
+							"Intentar manejar las ruedas individualmente creando un circuito usando un microchip y la tarjeta de expansión."
+						],
+						"status": "completed"
+					}
+				}
+			],
+			"issues": [
+				{
+					"title": "Descripción de problemas",
+					"description": [
+						"Los motores seguían sin funcionar si se hacía uso de los transistores. Vimos que la principal causa era que los transistores no transmitían el voltaje adecuado, sólo pasaban la conexión a tierra, haciendo imposible el funcionamiento completo de las ruedas, ya que necesitábamos pasar tanto la tierra como la corriente, para poder alternar el movimiento de las ruedas entre adelante y atrás.",
+						"El microchip funcionaba bien en un principio, pero luego de un rato las ruedas empezaron a fallar y no registraban los movimientos correctamente por causas desconocidas."
+					]
+				},
+				{
+					"title": "Impacto en el proyecto",
+					"description": [
+						"Esta vez se pudo avanzar bastante más, ya que el poder usar un microchip como alternativa a los 8 transistores que ocupaban mucho espacio y usaban muchos cables, nos facilitó bastante el curso del proyecto.",
+						"Aún así, el no poder identificar por qué el microchip no registraba bien el control de las ruedas supuso un atraso, ya que generó un problema más que ver para la siguiente reunión."
+					]
+				},
+				{
+					"title": "Acciones tomadas",
+					"description": [
+						"Verificamos los voltajes recibidos por los transistores usando un multímetro, descubriendo que nos daba valores más bajos de lo esperado.",
+						"Buscamos alternativas en la web al uso de los transistores, encontrando que podíamos hacer uso de un microchip, el cual teníamos ya en nuestra propiedad en ese momento.",
+						"Se hizo uso del microchip de la manera correcta, siguiendo un diagrama encontrado en línea."
+					]
+				}
+			],
+			"nextSteps": [
+				{
+					"title": "Tareas planeadas",
+					"advancements": [
+						"Verificar por qué el microchip funcionaba de manera incorrecta algunas veces."
+					]
+				},
+				{
+					"title": "Cronograma revisado",
+					"calendar": [
+						{
+							"date": "2024/10/25",
+							"title": "Encontrar los problemas con el microchip"
+						}
+					]
+				}
+			],
+			"resources": [
+				{
+					"title": "Recursos utilizados",
+					"advancements": [
+						"https://microbit.org/",
+						"https://tinkercad.com/",
+						"https://learningdevelopments.co.nz/blogs/troystutorials/micro-bit-dc-motor-control"
+					]
+				}
+			],
+			"comments": [
+				{
+					"title": "Retroalimentación del equipo",
+					"advancements": [
+						"A pesar de que no se avanzó mucho con el funcionamiento de las ruedas, descubrir que vamos a poder hacer uso del microchip para facilitar las cosas nos da una gran ventaja. No sólo nos ayuda a tener menos cables y todo más organizado, sino que es más fácil a la hora de implementar. La próxima clase tendremos nuestro enfoque en encontrar una solución a los problemas que presenta el microchip e intentaremos avanzar con los sensores de seguidor de línea."
+					]
+				},
+				{
+					"title": "Sugerencias de mejora",
+					"advancements": [
+						"Intentar avanzar más rápido a otras etapas del proyecto, ya que queda poco tiempo para poder terminar con el proyecto."
+					]
+				}
+			],
+			"attachments": [
+				{
+					"description": "Imagen representativa de cómo funciona el microchip",
+					"url": "/microchip_circuit_1.png"
+				},
+				{
+					"description": "Imagen de referencia que usamos para hacer el circuito",
+					"url": "/microchip_circuit_2.png"
+				}
+			]
+		},
+		{
+			"id": 9,
+			"title": "Avance #9",
+			"date": "2024/10/25",
+			"summary": "Logramos implementar correctamente el microchip. También hicimos más pruebas con el sensor de seguidor de línea, encontrando otro problema con una posible solución.",
+			"tasks": [
+				{
+					"title": "Diseño y montaje",
+					"advancements": [
+						"Se conectaron las ruedas por medio del microchip",
+						"Se probaron los 3 sensores de seguidor de línea al mismo tiempo."
+					],
+					"status": "completed"
+				},
+				{
+					"title": "Programación",
+					"code": {
+						"title": "Código desarrollado",
+						"advancements": [
+							"Programa sencillo para controlar las ruedas hacia adelante y hacia atrás con los botones A y B de la micro:bit.",
+							"Programa para leer las señales de los sensores de seguidor de línea y mostrar cada uno en la pantalla de la micro:bit, dependiendo de si detectaba blanco o negro."
+						],
+						"status": "completed"
+					},
+					"tests": {
+						"title": "Pruebas realizadas",
+						"advancements": [
+							"Probar el uso de las ruedas haciendo uso del microchip y la tarjeta de expansión.",
+							"Probar la lectura del sensor de seguidor de línea haciendo uso de la tarjeta de expansión."
+						],
+						"status": "active"
+					}
+				}
+			],
+			"issues": [
+				{
+					"title": "Descripción de problemas",
+					"description": [
+						"Los motores seguían sin funcionar correctamente, sólo funcionaban a veces, y la mayoría de las veces había que impulsarlos manualmente.",
+						"Los sensores de seguidor de línea daban una señal errónea. Creemos que es a causa de la función para redondear valores desde los pines (pull_up o pull_down), ya que no es preciso."
+					]
+				},
+				{
+					"title": "Impacto en el proyecto",
+					"description": "Como no tenemos 100% funcional los sensores de seguidor de línea, no podemos avanzar con la fase final del proyecto, que sería programar el funcionamiento del robot para que salga del laberinto."
+				},
+				{
+					"title": "Acciones tomadas",
+					"description": [
+						"Verificamos el voltaje que le estaba llegando al microchip, y descubrimos que estaba muy por debajo de los 9V que deberían llegar, así que decidimos cambiar todas las pilas. Una vez hecho eso, ya no hubieron más problemas con el manejo de los motores.",
+						"Intentamos redondear los valores de los sensores de seguidor de línea de diferentes maneras, tanto hacia arriba como hacia abajo, sin éxito.",
+						"Intentamos conectar tanto 3 sensores a la vez, como sólo dos o incluso uno, y siempre funcionaban mal, o incluso no funcionaban."
+					]
+				}
+			],
+			"nextSteps": [
+				{
+					"title": "Tareas planeadas",
+					"advancements": [
+						"Planeamos leer los valores de los sensores de seguidor de línea en análogo en vez de leerlos de manera digital, ya que creemos que eso puede solucionar el problema que tenemos a la hora de leer los valores.",
+						"Traer un laberinto impreso para poner el robot en funcionamiento."
+					]
+				},
+				{
+					"title": "Cronograma revisado",
+					"calendar": [
+						{
+							"date": "2024/11/01",
+							"title": "Solucionar los problemas con los sensores"
+						}
+					]
+				}
+			],
+			"resources": [
+				{
+					"title": "Recursos utilizados",
+					"advancements": [
+						"https://microbit.org/"
+					]
+				}
+			],
+			"comments": [
+				{
+					"title": "Retroalimentación del equipo",
+					"advancements": [
+						"Al tener claros cuáles fueron los limitantes a la hora de implementar no sólo el microchip sino también los sensores, podemos tener un poco más de control a la hora de realizar el proyecto, sabiendo cuáles cosas funcionan y cuáles no."
+					]
+				},
+				{
+					"title": "Sugerencias de mejora",
+					"advancements": [
+						"Intentar agilizar entre todo el equipo los avances en el proyecto, para poder llegar a la fecha de entrega sin problema."
+					]
+				}
+			],
+			"attachments": [
+				{
+					"description": "Imagen del robot haciendo uso del microchip y los sensores de seguidor de linea",
+					"url": "/pruebas_5.png"
+				},
+				{
+					"description": "Imagen de los 3 sensores funcionando haciendo uso de sólo dos pilas de 1,5V",
+					"url": "/pruebas_6.png"
 				}
 			]
 		}
