@@ -1,13 +1,10 @@
-import { PiCodeBold, PiMinusBold, PiRectangleBold, PiXBold } from 'react-icons/pi'
+import { PiFilePdf, PiMinusBold, PiRectangleBold, PiXBold } from 'react-icons/pi'
 import styles from './styles.module.scss'
 import Button from '../components/Button'
-import { useNavigate } from 'react-router-dom'
 import { LayoutGroup, motion } from 'framer-motion'
 import snippet from './snippet.py?raw'
 
 const Docs = () => {
-	const navigate = useNavigate()
-	
 	return (
 		<div className={styles.docs}>
 			<div className={styles.title}>
@@ -38,9 +35,9 @@ const Docs = () => {
 				<LayoutGroup>
 					<motion.div className={styles.action} layout>
 						<motion.span className={styles.label} layout>
-							Ir a la referencia de la API
+							Documentación técnica en PDF
 						</motion.span>
-						<Button icon={PiCodeBold} text='Ver docs' action={() => navigate('/docs')} invert />
+						<Button icon={PiFilePdf} text='Ver PDF' action={() => window.open('/doc_tec_amazedbot.pdf', '__blank')} invert />
 					</motion.div>
 				</LayoutGroup>
 			</div>
