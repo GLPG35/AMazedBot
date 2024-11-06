@@ -846,7 +846,7 @@
 						"title": "Pruebas realizadas",
 						"advancements": [
 							"Intentar manejar las ruedas individualmente creando un circuito usando transistores, resistencias y la tarjeta de expansión.",
-							"Intentar manejar las ruedas individualmente creando un circuito usando transistores, resistencias y la tarjeta de expansión.",
+							"Intentar manejar las ruedas individualmente creando un circuito usando transistores y resistencias sin la tarjeta de expansión.",
 							"Probar que los transistores transmitan el voltaje correcto.",
 							"Intentar manejar las ruedas individualmente creando un circuito usando un microchip y la tarjeta de expansión."
 						],
