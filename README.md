@@ -1,2 +1,2 @@
 # AMazedBot
-Project for the creation of a maze solving robot, made with Micro:bit
+Proyecto creado para la creación de un carro robot que sale de un laberinto. Hecho con micro:bit
