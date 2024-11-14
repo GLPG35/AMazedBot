@@ -1,117 +1,128 @@
 # Ruedas
-RUEDA_IZQ_F = DigitalPin.P3
-RUEDA_IZQ_B = DigitalPin.P4
-RUEDA_DER_F = DigitalPin.P6
-RUEDA_DER_B = DigitalPin.P7
+RUEDA_DER_F = DigitalPin.P3
+RUEDA_DER_B = DigitalPin.P4
+RUEDA_IZQ_F = DigitalPin.P6
+RUEDA_IZQ_B = DigitalPin.P7
 
 # Sensores
 SENSOR_IZQ = DigitalPin.P0
 SENSOR_CEN = DigitalPin.P1
 SENSOR_DER = DigitalPin.P2
-SENSOR_ANALOGO_VAL = 400 # Se leen de forma análoga, este número define la diferencia entre 0 y 1
-pins.set_pull(SENSOR_IZQ, PinPullMode.PULL_UP)
-pins.set_pull(SENSOR_CEN, PinPullMode.PULL_UP)
-pins.set_pull(SENSOR_DER, PinPullMode.PULL_UP)
+SENSOR_ANALOGO_VAL = 511 # Se leen de forma análoga, este número define la diferencia entre 0 y 1
 
 # Otras constantes
 GIRO_MCR = 0 # Por cuantos microsegundos debe girar el robot para darse vuelta 90°
 
 # Globales
-x = 0
-y = 0
-d = 0
-nodos = []
-infoSensores = []
+modo = "robot"
+avanzando = False
 enejec = False
 
 # Pantalla de inicio
-input.on_button_pressed(Button.A, iniciar)
-basic.show_string("AMAZEDBOT")
+radio.set_group(49)
+led.enable(False)
+music.set_built_in_speaker_enabled(True)
+radio.set_transmit_power(7)
+
+# Controles
+input.on_gesture(Gesture.SHAKE, cambiar_modo)
+input.on_button_pressed(Button.A, boton_a)
+input.on_button_pressed(Button.B, boton_b)
+input.on_button_pressed(Button.AB, boton_ab)
 
 
 ### FUNCIONES DE LÓGICA PRINCIPALES ###
 
-# Funcion llamada al apretar "A"
-def iniciar():
+# Funcion llamada al apretar "AB"
+def cambiar_modo():
+    global modo
     global enejec
 
-    if enejec:
-        return # Solo ejecuta esta función si el programa no esta en ejecución
-    enejec = True
-    basic.clear_screen()
-    led.enable(False)
-    music.set_built_in_speaker_enabled(True)
-    basic.pause(1000)
-    calibrar()
+    if modo == "robot" and not enejec:
+        led.enable(True)
+        led.plot(2, 2)
+        modo = "host"
+
+# Funcion llamada al apretar "A"
+def boton_a():
+    global enejec
+    global modo
+
+    if modo == "robot":
+        if enejec:
+            return # Solo ejecuta esta función si el programa no esta en ejecución
+        enejec = True
+
+        basic.pause(1500)
+        calibrar()
+    else:
+        radio.send_string("girarIzq")
+    pass
+
+# Otros controles
+def boton_b():
+    global modo
+    if modo == "host":
+        radio.send_string("girarDer")
+    pass
+def boton_ab():
+    global modo
+    global avanzando
+    if modo == "host":
+        if avanzando:
+            avanzando = False
+            radio.send_string("parar")
+        else:
+            avanzando = True
+            radio.send_string("avanzar")
     pass
 
 # Calibración
 def calibrar():
-    global infoSensores
     global GIRO_MCR
 
     # Calibrar giro
     dir_i = input.compass_heading()
+    basic.pause(25)
     girar("d",200000)
+    basic.pause(25)
     dir_f = input.compass_heading()
     if dir_f < dir_i:
         dir_f += 360
     dir_total = dir_f - dir_i
     if dir_total == 0:
         music.play(music.tone_playable(Note.A, music.beat(BeatFraction.WHOLE)), music.PlaybackMode.UNTIL_DONE)
-        control.reset() # La microbit no giró, entonces marca error
+        control.reset() # La microbit no giró, entonces marca error y se reinicia
     GIRO_MCR = int((90/dir_total)*200000)
     girar("i",200000)
     basic.pause(100)
-
-    # Asegurarse que esté en el laberinto
-    if verCaminos()[1] == 1:
-        music.play(music.tone_playable(Note.B, music.beat(BeatFraction.WHOLE)), music.PlaybackMode.UNTIL_DONE)
-        control.reset() # El robot está parado en el camino, entonces marca error
-
-    bucle()
-
-# Bucle Principal
-def bucle():
-    global x
-    global y
-    global d
-    global nodos
-    global infoSensores
-    global GIRO_MCR
-    escapado = False
+    music.play(music.tone_playable(988, music.beat(BeatFraction.WHOLE)), music.PlaybackMode.UNTIL_DONE)
     
-    while(not escapado):
-        pass
+    mover()
+
+# Radio
+radio.on_received_string(on_received_string)
+def on_received_string(receivedString):
+    global enejec
+    global GIRO_MCR
+
+    if enejec == False: return
+
+    serial.write_line(receivedString)
+    if receivedString == "girarIzq":
+        girar("i", GIRO_MCR)
+    elif receivedString == "girarDer":
+        girar("d", GIRO_MCR)
+    elif receivedString == "avanzar":
+        mover()
+    elif receivedString == "parar":
+        parar()
     
     return
 
 
-### FUNCIONES DE SENSORES ###
-def verCaminos():
-    global SENSOR_ANALOGO_VAL
-    global SENSOR_IZQ
-    global SENSOR_CEN
-    global SENSOR_DER
-
-    v1 = 0
-    v2 = 0
-    v3 = 0
-    if pins.analog_read_pin(SENSOR_IZQ) > SENSOR_ANALOGO_VAL:
-        v1=1
-    if pins.analog_read_pin(SENSOR_CEN) > SENSOR_ANALOGO_VAL:
-        v2=1
-    if pins.analog_read_pin(SENSOR_DER) > SENSOR_ANALOGO_VAL:
-        v3=1
-
-    return [
-        v1,
-        v2,
-        v3
-    ]
-
-
 ### FUNCIONES DE MOTORES ###
+
 def girar(direccion,tiempo):
     global RUEDA_IZQ_F
     global RUEDA_IZQ_B
@@ -131,7 +142,6 @@ def girar(direccion,tiempo):
         pins.digital_write_pin(RUEDA_IZQ_B, 0)
         pins.digital_write_pin(RUEDA_DER_F, 0)
 
-    basic.pause(20)
     return
 
 def mover(direccion = True):
